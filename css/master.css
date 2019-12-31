@@ -74,13 +74,14 @@ header nav a:hover {
 /* Box */
 
 .box {
+  margin-top: 10px;
   padding: 7px 10px 7px 10px;
   background-color: #DBBFD8;
-  width: 40%;
+  width: 30%;
 }
 
 .box h1 {
-  margin: 0px;
+  margin: 5px;
 }
 
 .box img {
@@ -88,22 +89,9 @@ header nav a:hover {
   height: auto;
 }
 
-/* Landing */
-
-#landing {
-  margin-top: 10px;
-}
-
-/* Destaque */
-
-#destaque {
-  float: left;
-}
-
-/* Scratch Recente */
-
-#scratch-recente {
-  float: right;
+.box p {
+  margin: 5px;
+  font-size: 18px;
 }
 
 /* Media queries */
