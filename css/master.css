@@ -49,6 +49,32 @@ header nav a:hover {
   background-color: #8C4DBA;
 }
 
+/* News */
+#news {
+  background-color: #E7A121;
+}
+
+#news p {
+  float: left;
+}
+
+#news button {
+  float: right;
+  border: 0px;
+  background-color: #F8CE37;
+  padding: 7px 10px 7px 10px;
+  margin-top: 10px;
+}
+
+#news button:hover {
+  background-color: #F6DC1B;
+  cursor: pointer;
+}
+
+#closed-news {
+  display: none;
+}
+
 /* Destaque */
 
 #destaque {
