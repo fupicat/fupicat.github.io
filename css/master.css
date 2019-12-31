@@ -49,6 +49,18 @@ header nav a:hover {
   background-color: #8C4DBA;
 }
 
+/* Destaque */
+
+#destaque {
+  float: left;
+}
+
+/* Scratch Recente */
+
+#scratch-recente {
+  float: right;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
