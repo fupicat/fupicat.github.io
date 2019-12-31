@@ -71,10 +71,6 @@ header nav a:hover {
   cursor: pointer;
 }
 
-.closed-news {
-  display: none;
-}
-
 /* Destaque */
 
 #destaque {
