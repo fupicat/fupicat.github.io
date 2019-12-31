@@ -71,7 +71,7 @@ header nav a:hover {
   cursor: pointer;
 }
 
-#closed-news {
+.closed-news {
   display: none;
 }
 

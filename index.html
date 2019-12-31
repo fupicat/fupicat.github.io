@@ -31,7 +31,7 @@
     <section id="news" onload="checkNews('news1');">
       <div class="container">
         <p><b>Notícias:</b> O site foi criado!</p>
-        <button type="button" name="close" onclick="setCookie('news1', 'true'); document.getElementById('news').id = 'closed-news';">X</button>
+        <button type="button" name="close" onclick="setCookie('news1', 'true'); document.getElementById('news').class = 'closed-news';">X</button>
       </div>
     </section>
     <section id='landing'>
@@ -71,7 +71,7 @@
       var news = getCookie(cname);
       var section = document.getElementById('news');
       if (news != "") {
-        section.id = 'closed-news';
+        section.class = 'closed-news';
       }
     }
   </script>
