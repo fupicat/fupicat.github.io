@@ -71,6 +71,29 @@ header nav a:hover {
   cursor: pointer;
 }
 
+/* Box */
+
+.box {
+  padding: 7px 10px 7px 10px;
+  background-color: #DBBFD8;
+  width: 40%;
+}
+
+.box h1 {
+  margin: 0px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+/* Landing */
+
+#landing {
+  margin-top: 10px;
+}
+
 /* Destaque */
 
 #destaque {

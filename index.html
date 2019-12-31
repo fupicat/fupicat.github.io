@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/master.css">
 
+    <meta name="description" content="Eu crio jogos e outras coisas.">
+    <meta name="keywords" content="fupi, fupicat, fupi437, scratch, godot, engine, html5, online, jogos, games, sz, scratcherz, música, royalty-free, public domain">
+    <meta name="author" content="Fupi">
+
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -17,7 +21,8 @@
 
     <title>Fupi</title>
   </head>
-  <body onload="checkNews('news1');">
+  <body onload="checkNews('news2');"> <!-- News !-->
+
     <header>
       <div class='container'>
         <a href="index.html"><img src="img/LogoSmall.png" alt="Fupi" onmouseover="this.src='img/Logo.png'" onmouseout="this.src='img/LogoSmall.png'"></a>
@@ -28,25 +33,43 @@
         </nav>
       </div>
     </header>
+
     <section id="news">
       <div class="container">
-        <p><b>Notícias:</b> O site foi criado!</p>
-        <button type="button" name="close" onclick="setCookie('news1', 'true'); document.getElementById('news').style.display = 'none';">X</button>
+        <p><b>Notícias:</b> O site foi criado!</p> <!-- News !-->
+        <button type="button" name="close" onclick="setCookie('news2', 'true'); document.getElementById('news').style.display = 'none';">X</button>
       </div>
     </section>
+
     <section id='landing'>
       <div class="container">
-        <div id="destaque">
+        <div class='box' id="destaque">
           <h1>Projeto em Destaque</h1>
+          <img src="img/crie sua dança.png" alt="Crie sua dança">
+          <p>Crie sua Dança</p>
         </div>
-        <div id="scratch-recente">
+        <div class='box' id="scratch-recente">
           <h1>Projeto do Scratch mais Recente</h1>
+          <img src="img/neono voar.png" alt="Neono Voar">
+          <p>Neono Voar</p>
         </div>
       </div>
     </section>
+
   </body>
 
   <script>
+    // Scratch API
+    /*const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    var request = new XMLHttpRequest();
+    request.open('GET', proxyurl + 'https://api.scratch.mit.edu/users/Fupicat/projects?limit=1&offset=440', true);
+    request.onload = function() {
+      var data = JSON.parse(this.response);
+      console.log(data[0].title)
+    }
+    request.send();*/
+
+    // News cookie
     function setCookie(cname,cvalue) {
         document.cookie = cname + "=" + cvalue + ";path=/";
       }
