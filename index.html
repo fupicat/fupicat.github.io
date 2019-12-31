@@ -17,7 +17,7 @@
 
     <title>Fupi</title>
   </head>
-  <body>
+  <body onload="checkCookie('news1');">
     <header>
       <div class='container'>
         <a href="index.html"><img src="img/LogoSmall.png" alt="Fupi" onmouseover="this.src='img/Logo.png'" onmouseout="this.src='img/LogoSmall.png'"></a>
@@ -28,7 +28,7 @@
         </nav>
       </div>
     </header>
-    <section id="news" onload="checkCookie('news1');">
+    <section id="news">
       <div class="container">
         <p><b>Notícias:</b> O site foi criado!</p>
         <button type="button" name="close" onclick="setCookie('news1', 'true'); document.getElementById('news').id = 'closed-news';">X</button>
@@ -68,9 +68,10 @@
     }
 
     function checkNews(cname) {
-      var news=getCookie(cname);
+      var news = getCookie(cname);
+      var section = document.getElementById('news')
       if (news != "") {
-        document.getElementById('news').id = 'closed-news';
+        section.id = 'closed-news';
       }
     }
   </script>
