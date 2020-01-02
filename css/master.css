@@ -94,6 +94,17 @@ header nav a:hover {
   font-size: 18px;
 }
 
+/* Blog */
+
+#blog {
+  height: 615px;
+}
+
+#blog object{
+  width: 100%;
+  height: 100%;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
