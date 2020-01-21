@@ -233,6 +233,17 @@ footer a:hover {
   padding: 5px;
 }
 
+/* Article */
+
+article p, article li {
+  text-align: justify;
+}
+
+article a {
+  font-weight: bold;
+  color: #000;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
