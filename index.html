@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 
     <meta name="description" content="Eu crio jogos e outras coisas.">
     <meta name="keywords" content="fupi, fupicat, fupi437, scratch, godot, engine, html5, online, jogos, games, sz, scratcherz, música, royalty-free, public domain">
@@ -22,7 +23,7 @@
     <title>Fupi</title>
   </head>
   <body onload="checkNews('news2');"> <!-- News !-->
-
+    <!-- Olá, eu sou o código-fonte. Por favor não repare na bagunça. '3' !-->
     <header>
       <div class='container'>
         <a href="index.html"><img src="img/LogoSmall.png" alt="Fupi" onmouseover="this.src='img/Logo.png'" onmouseout="this.src='img/LogoSmall.png'"></a>
@@ -43,23 +44,92 @@
 
     <section id='landing'>
       <div class="container">
-        <div class='box'>
-          <h1>Projeto em Destaque</h1>
-          <img src="img/crie sua dança.png" alt="Crie sua dança">
-          <p>Crie sua Dança</p>
-        </div>
+
         <div id='intro'>
-          <h1>Olá!</h1>
-          <p>Este site ainda está em construção.</p>
+          <h1>Olá! Eu sou o Fupi.</h1>
+          <p>Este site vai ter as coisas que eu faço.</p>
+          <div id='cont-boxes'>
+            <a href="projetos.html#jogos">
+              <div class='box-small'>
+                <img src="img/Jogos.png" alt="Jogos">
+                <h1>Jogos</h1>
+              </div>
+            </a>
+            <a href="projetos.html#animações">
+              <div class='box-small'>
+                <img src="img/Animações.png" alt="Animações">
+                <h1>Animações</h1>
+              </div>
+            </a>
+            <a href="projetos.html#músicas">
+              <div class='box-small'>
+                <img src="img/Música.png" alt="Músicas">
+                <h1>Músicas</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id='featured'>
+      <div class="container">
+        <h1>Coisas em Destaque</h1>
+        <div class="grid">
+
+          <a href="projetos/SZ.html">
+            <div class='grid-item' style='background: url(img/Fundos/Estrelas.png); background-size: 100%; color: #fff;'>
+              <img src="img/Projetos/SZ.png" alt="Logo do SZ">
+              <div class="info">
+                <h1>SZ</h1>
+                <p>Meu projeto atual, em desenvolvimento.</p>
+              </div>
+            </div>
+          </a>
+          <div class='grid-item' style='background: #a0b1e1; color: #000;'>
+            <img src="img/Projetos/ScratchCat3D.png" alt="Scratch Cat 3D">
+            <div class="info">
+              <h1>Modelo 3D do Scratch Cat</h1>
+              <p>Um modelo 3D que eu fiz, baseado no mascote do Scratch.</p>
+            </div>
+          </div>
+          <div class='grid-item' style="background: #555; color: #fff;">
+            <img src="img/Projetos/Fupalito.svg" alt="Fupicat Palito">
+            <div class="info">
+              <h1>Mundo dos Palitos</h1>
+              <p>Uma série colaborativa no Scratch da qual estou participando! Fomos transportados a um mundo de stickmans.</p>
+            </div>
+          </div>
+          <div class='grid-item' style="background: #000; color: #fff;">
+            <img src="img/Projetos/crie sua dança.png" alt="Crie sua Dança">
+            <div class="info">
+              <h1>Crie sua Dança</h1>
+              <p>Um jogo besta onde você pode criar sua própria dança besta.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <footer>
+      <div class="container">
+        <p>
+        <a href="https://scratch.mit.edu/users/Fupicat/">Scratch</a> &#183;
+        <a href="https://fupi.itch.io">Itch</a> &#183;
+        <a href="https://github.com/Fupicat">GitHub</a> &#183;
+        <a href="https://twitter.com/Fupicat_BR">Twitter</a> &#183;
+        <a href="https://youtube.com/c/fupicat">YouTube</a> &#183;
+        <a href="https://opengameart.org/users/fupi">OpenGameArt</a>
+        </p>
+      </div>
+    </footer>
+
   </body>
 
   <script>
-
-    // News cookie
     function setCookie(cname,cvalue) {
         document.cookie = cname + "=" + cvalue + ";path=/";
       }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Meus jogos e outras coisas.">
+    <meta name="keywords" content="fupi, fupicat, fupi437, scratch, godot, engine, html5, online, jogos, games, sz, scratcherz, música, royalty-free, public domain">
+    <meta name="author" content="Fupi">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#6e438d">
+    <meta name="apple-mobile-web-app-title" content="Fupi">
+    <meta name="application-name" content="Fupi">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#6e438d">
+
+    <title>Fupi &#183; Projetos</title>
+  </head>
+  <body>
+    <!-- Olá, eu sou o código-fonte. Por favor não repare na bagunça. '3' !-->
+    <header>
+      <div class='container'>
+        <a href="index.html"><img src="img/LogoSmall.png" alt="Fupi" onmouseover="this.src='img/Logo.png'" onmouseout="this.src='img/LogoSmall.png'"></a>
+        <nav>
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="https://fupiblog.blogspot.com">Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class='projects-section' id='jogos'>
+      <div class="container">
+        <div class="projects-header" onclick="if (document.getElementById('grid-jogos').style.display == 'none') { document.getElementById('grid-jogos').style.display = 'grid'; } else { document.getElementById('grid-jogos').style.display = 'none';}">
+          <img src="img/Jogos.png" alt="Jogos">
+          <h1>Jogos</h1>
+        </div>
+        <div class="grid" id='grid-jogos' style='grid-template-columns: auto auto auto;'>
+
+          <a href="projetos/god-complex.html">
+            <div class="grid-item">
+              <img src="img/Projetos/God Complex.png" alt="God Complex">
+              <div class="info">
+                <h1>God Complex</h1>
+                <p>Jogo idle onde você cria e destrói um universo.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="projetos/nowhere-but-forward.html">
+            <div class="grid-item">
+              <img src="img/Projetos/Nowhere but Forward.png" alt="Nowhere but Forward">
+              <div class="info">
+                <h1>Nowhere but Forward</h1>
+                <p>Jogo de plataforma que usa apenas um botão.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="projetos/blind-boom.html">
+            <div class="grid-item">
+              <img src="img/Projetos/Blind Boom.png" alt="Blind Boom">
+              <div class="info">
+                <h1>Blind Boom</h1>
+                <p>Jogo sem gráficos que usa apenas sons.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="projetos/color-maze.html">
+            <div class="grid-item">
+              <img src="img/Projetos/Color Maze.png" alt="Color Maze">
+              <div class="info">
+                <h1>Color Maze</h1>
+                <p>Jogo de um nível só onde você tem que usar a cor certa.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="projetos/turn-on-the-tv.html">
+            <div class="grid-item">
+              <img src="img/Projetos/TV.png" alt="Turn on the TV">
+              <div class="info">
+                <h1>Turn on the TV</h1>
+                <p>Ligue a TV e veja o que acontece.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="projetos/convulsao-simulator.html">
+            <div class="grid-item">
+              <img src="img/Projetos/Convulsão.svg" alt="Convulsão Simulator">
+              <div class="info">
+                <h1>Convulsão Simulator</h1>
+                <p>Aperte freneticamente a tecla K.</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+        <a href="https://scratch.mit.edu/users/Fupicat/">Scratch</a> &#183;
+        <a href="https://fupi.itch.io">Itch</a> &#183;
+        <a href="https://github.com/Fupicat">GitHub</a> &#183;
+        <a href="https://twitter.com/Fupicat_BR">Twitter</a> &#183;
+        <a href="https://youtube.com/c/fupicat">YouTube</a> &#183;
+        <a href="https://opengameart.org/users/fupi">OpenGameArt</a>
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>
