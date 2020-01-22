@@ -293,6 +293,6 @@ article a {
     height: 5em;
   }
   article img {
-    float: none;
+    float: none !important;
   }
 }
