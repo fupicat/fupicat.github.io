@@ -244,6 +244,18 @@ article a {
   color: #000;
 }
 
+/* Img Right */
+
+.img-right {
+  float: right;
+}
+
+/* Img Left */
+
+.img-left {
+  float: left;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
@@ -291,5 +303,8 @@ article a {
   }
   .grid-item img {
     height: 5em;
+  }
+  .img-right, .img-left {
+    float: none;
   }
 }

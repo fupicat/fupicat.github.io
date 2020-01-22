@@ -22,7 +22,7 @@
 
     <title>Fupi</title>
   </head>
-  <body onload="checkNews('news2');"> <!-- News !-->
+  <body>
     <!-- Olá, eu sou o código-fonte. Por favor não repare na bagunça. '3' !-->
     <header>
       <div class='container'>
@@ -34,13 +34,6 @@
         </nav>
       </div>
     </header>
-
-    <section id="news">
-      <div class="container">
-        <p><b>Notícias:</b> O site foi criado!</p> <!-- News !-->
-        <button type="button" name="close" onclick="setCookie('news2', 'true'); document.getElementById('news').style.display = 'none';">X</button>
-      </div>
-    </section>
 
     <section id='landing'>
       <div class="container">
@@ -134,34 +127,4 @@
     </footer>
 
   </body>
-
-  <script>
-    function setCookie(cname,cvalue) {
-        document.cookie = cname + "=" + cvalue + ";path=/";
-      }
-
-    function getCookie(cname) {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
-
-    function checkNews(cname) {
-      var news = getCookie(cname);
-      var section = document.getElementById('news');
-      if (news != "") {
-        section.style.display = 'none';
-      }
-    }
-  </script>
 </html>
