@@ -289,4 +289,7 @@ article a {
   .grid {
     grid-template-columns: auto !important;
   }
+  .grid-item img {
+    height: 5em;
+  }
 }
