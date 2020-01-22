@@ -292,7 +292,4 @@ article a {
   .grid-item img {
     height: 5em;
   }
-  article img {
-    float: none !important;
-  }
 }
