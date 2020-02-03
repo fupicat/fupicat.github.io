@@ -219,6 +219,22 @@ footer a:hover {
   background-color: #6595ca;
 }
 
+/* Unfinished */
+
+#unfinished {
+  background-color: #9c9d9f;
+}
+
+#unfinished .grid-item {
+  background-color: #4c4e51;
+  color: #fff;
+  transition: background-color 0.2s cubic-bezier(.17,.84,.44,1);
+}
+
+#unfinished .grid-item:hover {
+  background-color: #323435;
+}
+
 /* Proj Header */
 
 .proj-header h1 {
@@ -254,6 +270,16 @@ article a {
 
 .img-left {
   float: left;
+}
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
 }
 
 /* Media queries */
@@ -306,5 +332,8 @@ article a {
   }
   .img-right, .img-left {
     float: none;
+  }
+  .proj-header img {
+    width: 100%;
   }
 }
