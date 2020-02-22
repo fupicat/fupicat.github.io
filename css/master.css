@@ -184,7 +184,7 @@ footer a:hover {
 /* Projects Section */
 
 .projects-section img {
-  display: inline;
+  display: inline-block;
   height: 5em;
   margin: 5px;
 }
@@ -203,6 +203,12 @@ footer a:hover {
   cursor: pointer;
 }
 
+/* Grid Item */
+
+.grid-item {
+  transition: background-color 0.2s cubic-bezier(.17,.84,.44,1);
+}
+
 /* Jogos */
 
 #jogos {
@@ -212,7 +218,6 @@ footer a:hover {
 #jogos .grid-item {
   background-color: #567699;
   color: #fff;
-  transition: background-color 0.2s cubic-bezier(.17,.84,.44,1);
 }
 
 #jogos .grid-item:hover {
@@ -228,11 +233,25 @@ footer a:hover {
 #unfinished .grid-item {
   background-color: #4c4e51;
   color: #fff;
-  transition: background-color 0.2s cubic-bezier(.17,.84,.44,1);
 }
 
 #unfinished .grid-item:hover {
   background-color: #323435;
+}
+
+/* Art */
+
+#art {
+  background-color: #c465bf;
+}
+
+#art .grid-item {
+  background-color: #dd92d9;
+  color: #000;
+}
+
+#art .grid-item:hover {
+  background-color: #a84ba3;
 }
 
 /* Proj Header */
