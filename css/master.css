@@ -154,6 +154,7 @@ header nav a:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
+  transition: background-color 0.2s cubic-bezier(.17,.84,.44,1);
 }
 
 .grid-item img {
@@ -201,12 +202,6 @@ footer a:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-/* Grid Item */
-
-.grid-item {
-  transition: background-color 0.2s cubic-bezier(.17,.84,.44,1);
 }
 
 /* Jogos */
@@ -299,6 +294,22 @@ article a {
   align-items: center;
   justify-content: space-between;
   margin: 10px 0px;
+}
+
+/* MDPgrid */
+
+#MDPgrid .grid-item {
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #000;
+}
+
+#MDPgrid .grid-item:hover {
+  background-color: #b3b3b3;
+}
+
+#MDPgrid .grid-item img {
+  margin: 0px;
 }
 
 /* Media queries */
