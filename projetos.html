@@ -29,11 +29,11 @@
 
     <section class='projects-section' id='jogos'>
       <div class="container">
-        <div class="projects-header" onclick="if (document.getElementById('grid-jogos').style.display == 'none') { document.getElementById('grid-jogos').style.display = 'grid'; } else { document.getElementById('grid-jogos').style.display = 'none';}">
+        <div class="projects-header">
           <img src="img/Jogos.png" alt="Jogos">
           <h1>Jogos</h1>
         </div>
-        <div class="grid" id='grid-jogos' style='grid-template-columns: auto auto auto;'>
+        <div class="grid" style='grid-template-columns: auto auto auto;'>
 
           <a href="projetos/god-complex.html">
             <div class="grid-item">
@@ -111,11 +111,11 @@
 
     <section class='projects-section' id='art'>
       <div class="container">
-        <div class="projects-header" onclick="if (document.getElementById('grid-unfinished').style.display == 'none') { document.getElementById('grid-unfinished').style.display = 'grid'; } else { document.getElementById('grid-unfinished').style.display = 'none';}">
+        <div class="projects-header">
           <img src="img/Arte.png" alt="Arte">
           <h1>Arte</h1>
         </div>
-        <div class="grid" id='grid-unfinished' style='grid-template-columns: auto auto auto;'>
+        <div class="grid" style='grid-template-columns: auto;'>
 
           <a href="projetos/scratch-cat-3d.html">
             <div class="grid-item">
@@ -133,10 +133,10 @@
 
     <section class='projects-section' id='unfinished'>
       <div class="container">
-        <div class="projects-header" onclick="if (document.getElementById('grid-unfinished').style.display == 'none') { document.getElementById('grid-unfinished').style.display = 'grid'; } else { document.getElementById('grid-unfinished').style.display = 'none';}">
+        <div class="projects-header">
           <h1>Não Terminados</h1>
         </div>
-        <div class="grid" id='grid-unfinished' style='grid-template-columns: auto auto;'>
+        <div class="grid" style='grid-template-columns: auto auto;'>
 
           <a href="projetos/sz.html">
             <div class="grid-item">
@@ -169,6 +169,28 @@
 			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			  crossorigin="anonymous"></script>
     <script src="/autoload.js"></script>
+    <script>
+      var origHeight = []; //Lista de tamanhos originais das seções em px.
+
+      $('.projects-section').each(function() { //Para cada seção de projetos...
+        origHeight.push($(this).find('.grid').height()); //Adicione o tamanho da grade à lista.
+
+        $(this).find('.projects-header').click(function() { //Adicione esta função ao clicar na seção.
+          var toggle = $(this).parent().find('.grid');
+
+          if (toggle.css('display') == 'none') { //Se a grade estiver escondida...
+            toggle.show(); //Mostre a grade.
+
+            var hundred = origHeight[$('.projects-section').index($(this).parent().parent())]; //Pegue o tamanho da lista.
+            toggle.animate({height:hundred},200,function(){toggle.css('height', '100%');}); //Anime o tamanho da grade até o valor da lista e então resete o tamanho para 100%.
+          } else { //Senão...
+            toggle.animate({height:0},200,function(){toggle.hide();}); //Anime o tamanho para 0px e esconda a grade.
+          }
+
+        })
+
+      })
+    </script>
 
   </body>
 </html>
