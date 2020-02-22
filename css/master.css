@@ -204,51 +204,6 @@ footer a:hover {
   cursor: pointer;
 }
 
-/* Jogos */
-
-#jogos {
-  background-color: #a5bfdb;
-}
-
-#jogos .grid-item {
-  background-color: #567699;
-  color: #fff;
-}
-
-#jogos .grid-item:hover {
-  background-color: #6595ca;
-}
-
-/* Unfinished */
-
-#unfinished {
-  background-color: #9c9d9f;
-}
-
-#unfinished .grid-item {
-  background-color: #4c4e51;
-  color: #fff;
-}
-
-#unfinished .grid-item:hover {
-  background-color: #323435;
-}
-
-/* Art */
-
-#art {
-  background-color: #c465bf;
-}
-
-#art .grid-item {
-  background-color: #dd92d9;
-  color: #000;
-}
-
-#art .grid-item:hover {
-  background-color: #a84ba3;
-}
-
 /* Proj Header */
 
 .proj-header h1 {

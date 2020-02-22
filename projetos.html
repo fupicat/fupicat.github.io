@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/projects.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 
     <meta name="description" content="Meus jogos e outras coisas.">
@@ -131,6 +132,28 @@
       </div>
     </section>
 
+    <section class='projects-section' id='apps'>
+      <div class="container">
+        <div class="projects-header">
+          <img src="img/Utilidades.png" alt="Utilidades">
+          <h1>Utilidades</h1>
+        </div>
+        <div class="grid" style='grid-template-columns: auto;'>
+
+          <a href="https://fupicat.github.io/replacer">
+            <div class="grid-item">
+              <img src="img/Projetos/Replacer.png" alt="Replacer">
+              <div class="info">
+                <h1>Replacer</h1>
+                <p>Editor de texto automático. Você pode criar regras para trocar fragmentos de texto por outros.</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
     <section class='projects-section' id='unfinished'>
       <div class="container">
         <div class="projects-header">
@@ -182,9 +205,9 @@
             toggle.show(); //Mostre a grade.
 
             var hundred = origHeight[$('.projects-section').index($(this).parent().parent())]; //Pegue o tamanho da lista.
-            toggle.animate({height:hundred},200,function(){toggle.css('height', '100%');}); //Anime o tamanho da grade até o valor da lista e então resete o tamanho para 100%.
+            toggle.stop().animate({height:hundred},200,function(){toggle.css('height', '100%');}); //Anime o tamanho da grade até o valor da lista e então resete o tamanho para 100%.
           } else { //Senão...
-            toggle.animate({height:0},200,function(){toggle.hide();}); //Anime o tamanho para 0px e esconda a grade.
+            toggle.stop().animate({height:0},200,function(){toggle.hide();}); //Anime o tamanho para 0px e esconda a grade.
           }
 
         })
