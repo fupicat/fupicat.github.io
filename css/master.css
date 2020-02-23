@@ -168,6 +168,16 @@ header nav a:hover {
   margin: 10px;
 }
 
+.grid-item .info a {
+  text-decoration: underline;
+}
+
+/* Series Grid */
+
+.series-grid .grid-item .info {
+  margin: auto;
+}
+
 /* Footer */
 
 footer {
