@@ -22,7 +22,7 @@
 
     <title>Fupi &#183; SZ</title>
   </head>
-  <body style='background-color: #1b0b3e'>
+  <body>
     <!-- Olá, eu sou o código-fonte. Por favor não repare na bagunça. '3' !-->
     
     <header></header>
@@ -33,11 +33,11 @@
       </div>
     </section>
 
-    <article style='color: #fff'>
+    <article>
       <div class="container">
         <h1>Então...</h1>
         <p>Eu não tenho muito pra te mostrar sobre esse jogo porque ele ainda não está pronto, inclusive está bem longe de estar.</p>
-        <p>Mas se você quiser acompanhar o desenvolvimento, você pode! Estou postando no meu <a href="https://fupiblog.blogspot.com" style="color: #fff; font-weight: bold;">blog</a> novidades sobre o jogo, adições, bugfixes e mais.</p>
+        <p>Mas se você quiser acompanhar o desenvolvimento, você pode! Estou postando no meu <a href="https://fupiblog.blogspot.com">blog</a> novidades sobre o jogo, adições, bugfixes e mais.</p>
         <p>Esse jogo é pra ser um simulador de vida, inspirado no pouco que eu joguei de The Sims, Animal Crossing e Stardew Valley, mas meu objetivo é fazer algo completamente diferente, como se fosse um RPG de vida. Por enquanto eu já fiz um editor de casa e um sistema de NPCs que ainda é primitivo. Eu trabalho neste jogo todos os dias então o progresso está fluindo consistentemente. Infelizmente com a volta das aulas e do trabalho eu vou ter muito menos tempo para trabalhar no jogo, mas vou tentar manter pelo menos uma rotina de uma atualização por semana.</p>
         <div class="gallery">
           <img src="../img/Artigos/SZHouse.png" alt="Casa no SZ" title="O editor de casa." style="width: 20em;">
@@ -50,9 +50,29 @@
 
     <section class='browser-game'>
       <div class="container">
+        
+        <style>
+          body {
+            background-color: #1b0b3e;
+          }
+          .proj-header h1 {
+            color: #fff;
+          }
+          .grid-item {
+            background-color: #8668c8;
+            color: #000;
+          }
+          .grid-item a {
+            color: #e9dfff;
+          }
+          article, article a {
+            color: #fff;
+          }
+        </style>
+
         <p class="warning">Atenção: Jogo não terminado. Você terá que exportar o projeto você mesmo se quiser jogar.</p>
         <div class="grid">
-          <div class="grid-item" style="color: #000; background-color: #8668c8;">
+          <div class="grid-item">
             <div class="info">
               <h1>Instruções</h1>
               <p>Controles: Mouse ou Teclado</p>
@@ -62,12 +82,12 @@
               <p>Botão esquerdo do mouse para andar e clicar em botões.</p>
             </div>
           </div>
-          <div class="grid-item" style="color: #000; background-color: #8668c8;">
+          <div class="grid-item">
             <div class="info">
               <h1>Sobre</h1>
               <p>Este jogo é baseado em ScratcherZ, uma série de jogos antigos que eu fiz no Scratch.</p>
               <h1>Links</h1>
-              <p><a href="https://github.com/Fupicat/sz" style="color: #000">Repositório no GitHub</a></p>
+              <p><a href="https://github.com/Fupicat/sz">Repositório no GitHub</a></p>
             </div>
           </div>
         </div>

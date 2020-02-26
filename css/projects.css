@@ -72,3 +72,18 @@
 #anim .grid-item:hover {
     background-color: #eace61;
 }
+
+/* Music */
+  
+#music {
+    background-color: #97e34a;
+}
+  
+#music .grid-item {
+    background-color: #55b022;
+    color: #000;
+}
+  
+#music .grid-item:hover {
+    background-color: #6ec83c;
+}
