@@ -1,0 +1,95 @@
+/* Global */
+
+body {
+  background: #e8d7e6;
+}
+
+/* Header */
+
+header {
+  background-color: #6E438D;
+}
+
+header nav a {
+  color: #FFFFFF;
+}
+
+header nav a:visited {
+  color: #fff;
+}
+
+header nav a:hover {
+  background-color: #8C4DBA;
+}
+
+/* News */
+
+#news {
+  background-color: #E7A121;
+}
+
+#news button {
+  background-color: #F8CE37;
+}
+
+#news button:hover {
+  background-color: #F6DC1B;
+}
+
+/* Box Small */
+
+.box-small {
+  color: #000;
+}
+
+.box-small:hover {
+  background: #b797b3;
+}
+
+/* Featured */
+
+#featured {
+  background: #b797b3;
+}
+
+#featured .grid-item {
+  background-color: #75558C;
+  color: #fff;
+}
+
+#featured .grid-item:hover {
+  background-color: #421E5B;
+}
+
+/* Footer */
+
+footer {
+  background: #6E438D;
+}
+
+footer p, footer p a {
+  color: #fff;
+}
+
+/* Browser Game */
+
+.browser-game .warning {
+  background-color: #ffeca4;
+}
+
+/* Article */
+
+article a {
+  color: #000;
+}
+
+/* MDPgrid */
+
+#MDPgrid .grid-item {
+  background-color: #ffffff;
+  color: #000;
+}
+
+#MDPgrid .grid-item:hover {
+  background-color: #b3b3b3;
+}

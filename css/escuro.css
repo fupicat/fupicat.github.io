@@ -1,0 +1,114 @@
+/*
+O sistema de temas usa !important pra sobrescrever os temas customizados das páginas de projetos.
+Eu sei que é má prática mas eu não ligo.
+Só eu vou atualizar esse site mesmo.
+*/
+
+/* Global */
+
+body {
+  background: #2e2633 !important;
+}
+
+/* Landing */
+
+#landing div #intro {
+  color: #fff;
+}
+
+/* Header */
+
+header {
+  background-color: #1C1620;
+}
+
+header nav a {
+  color: #FFFFFF;
+}
+
+header nav a:visited {
+  color: #fff;
+}
+
+header nav a:hover {
+  background-color: #352540;
+}
+
+/* Box Small */
+
+.box-small {
+  color: #fff;
+}
+
+.box-small:hover {
+  background: #45384d;
+}
+
+/* Featured */
+
+#featured {
+  background: #45384d;
+}
+
+#featured h1 {
+  color: #fff;
+}
+
+/* Footer */
+
+footer {
+  background: #1C1620;
+}
+
+footer p, footer p a {
+  color: #fff;
+}
+
+/* Browser Game */
+
+.browser-game .warning {
+  background-color: #993939;
+  color: #fff;
+}
+
+/* Projects */
+
+.proj-header h1 {
+  color: #fff !important;
+}
+
+.grid-item {
+  background-color: #1c1620 !important;
+  color: #fff !important;
+}
+
+.grid-item a {
+  color: #af95bf !important;
+}
+
+.projects-section {
+  background-color: #2e2633 !important;
+  color: #fff;
+}
+
+.projects-section .grid-item:hover {
+  background-color: #3e3146 !important;
+}
+
+#featured .grid-item:hover {
+  background-color: #2e2633 !important;
+}
+
+.series-grid .grid-item:hover {
+  background-color: #3e3146 !important;
+}
+
+/* Article */
+
+article {
+  color: #fff;
+}
+
+article a {
+  color: #fff;
+}
