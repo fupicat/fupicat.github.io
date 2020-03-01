@@ -1,3 +1,3 @@
 function changetheme() {
-  console.log('Found');
+  console.log(Cookie.get('tema'));
 }
