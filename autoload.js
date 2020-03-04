@@ -1,6 +1,6 @@
 let disqus = document.createElement('section');
 disqus.id = 'disqus';
-disqus.style = 'background-color: #2e2633;'
+disqus.style = 'background-color: #2e2633; box-shadow: inset 0px 6px 15px -8px black;';
 let container = document.createElement('div');
 container.className = 'container';
 disqus.appendChild(container);
