@@ -9,7 +9,7 @@ body {
   text-align: center;
 }
 
-.container {
+.container, .proj-header {
   width: 80%;
   margin: auto;
   overflow: hidden;
@@ -71,41 +71,37 @@ header nav a {
   cursor: pointer;
 }
 
-/* Box Small */
-
-.box-small {
-  display: inline-block;
-  margin: 10px 5px 0px 5px;
-  padding: 7px 10px;
-  width: 20%;
-  transition: background-color 0.2s cubic-bezier(.17,.84,.44,1);
-}
-
-.box-small h1 {
-  text-align: center;
-  font-size: 25px;
-  margin: 0px;
-}
-
-.box-small img {
-  width: 195px;
-  height: auto;
-}
-
 /* Landing */
 
 #landing {
   padding-bottom: 10px;
 }
 
-#landing div #intro {
+/* Intro */
+
+#intro {
+  width: 100%;
   text-align: center;
 }
 
-/* Cont Boxes */
+#intro .grid-item {
+  display: block;
+  padding: 10px 0px;
+  background: none;
+}
 
-#intro {
-  display: flow-root;
+#intro .grid-item:hover {
+  background-color: #b797b3;
+}
+
+#intro .grid-item img {
+  float: none;
+  margin: 0px;
+}
+
+#intro .grid-item h1 {
+  color: #000;
+  margin: 0px;
 }
 
 /* Featured */
@@ -156,6 +152,10 @@ header nav a {
 
 /* Series Grid */
 
+.series-grid {
+  grid-template-columns: auto auto;
+}
+
 .series-grid .grid-item .info {
   margin: auto;
 }
@@ -177,6 +177,10 @@ footer a:hover {
 .projects-section h1 {
   display: inline;
   margin: 5px;
+}
+
+.projects-section .grid {
+  grid-template-columns: auto auto auto;
 }
 
 /* Projects Header */
@@ -291,8 +295,8 @@ audio {
     display: inline-block;
     margin: auto;
   }
-  .grid {
-    grid-template-columns: auto !important;
+  .grid, .projects-section .grid {
+    grid-template-columns: auto;
   }
   .grid-item img {
     height: 5em;

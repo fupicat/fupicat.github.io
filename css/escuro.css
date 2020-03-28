@@ -10,6 +10,10 @@ body {
   background: #2e2633 !important;
 }
 
+h1 {
+  color: #fff;
+}
+
 /* Landing */
 
 #landing div #intro {
@@ -34,14 +38,18 @@ header nav a:hover {
   background-color: #352540;
 }
 
-/* Box Small */
+/* Intro */
 
-.box-small {
-  color: #fff;
+#intro .grid-item {
+  background: none !important;
 }
 
-.box-small:hover {
-  background: #45384d;
+#intro .grid-item:hover {
+  background: #45384d !important;
+}
+
+#intro .grid-item h1 {
+  color: #fff;
 }
 
 /* Featured */
