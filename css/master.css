@@ -253,6 +253,15 @@ audio {
   width: 100%;
 }
 
+/* Select */
+
+select {
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
