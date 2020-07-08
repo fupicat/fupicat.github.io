@@ -80,8 +80,9 @@ header nav a {
 /* Intro */
 
 #intro {
-  width: 100%;
+  width: 75%;
   text-align: center;
+  float: left;
 }
 
 #intro .grid-item {
@@ -102,6 +103,19 @@ header nav a {
 #intro .grid-item h1 {
   color: #000;
   margin: 0px;
+}
+
+/* Twitter */
+#twitter-widget-0 {
+  width: 24% !important;
+  margin-top: 10px !important;
+  min-width: 0px !important;
+  float: right;
+  display: block !important;
+}
+
+#twitter-widget-1 {
+  display: none !important;
 }
 
 /* Featured */
@@ -280,12 +294,16 @@ select {
     text-align: center;
     float: none;
   }
-  #landing #im-special {
-    padding-left: 0;
-  }
   #intro {
+    width: 100%;
     float: none;
     display: block;
+  }
+  #twitter-widget-0 {
+    display: none !important;
+  }
+  #twitter-widget-1 {
+    display: block !important;
   }
   .box-small {
     display: flex;
@@ -314,6 +332,9 @@ select {
     float: none;
   }
   .proj-header img {
+    width: 100%;
+  }
+  .browser-game iframe {
     width: 100%;
   }
 }
