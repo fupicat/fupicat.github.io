@@ -114,10 +114,6 @@ header nav a {
   display: block !important;
 }
 
-#twitter-widget-1 {
-  display: none !important;
-}
-
 /* Featured */
 
 #featured {
@@ -301,9 +297,6 @@ select {
   }
   #twitter-widget-0 {
     display: none !important;
-  }
-  #twitter-widget-1 {
-    display: block !important;
   }
   .box-small {
     display: flex;
