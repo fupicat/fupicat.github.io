@@ -13,18 +13,18 @@
     background-color: #6595ca;
 }
   
-/* Unfinished */
+/* Cancel */
   
-#unfinished {
+#cancel {
     background-color: #9c9d9f;
 }
   
-#unfinished .grid-item {
+#cancel .grid-item {
     background-color: #4c4e51;
     color: #fff;
 }
   
-#unfinished .grid-item:hover {
+#cancel .grid-item:hover {
     background-color: #323435;
 }
   
@@ -86,4 +86,19 @@
   
 #music .grid-item:hover {
     background-color: #6ec83c;
+}
+
+/* Recomend */
+  
+#recomend {
+    background-color: #9d64f0;
+}
+  
+#recomend .grid-item {
+    background-color: #7b30d5;
+    color: #000;
+}
+  
+#recomend .grid-item:hover {
+    background-color: #8b40e6;
 }

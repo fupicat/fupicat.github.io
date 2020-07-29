@@ -46,7 +46,7 @@
           <img src="img/Animações.png" alt="Animações">
           <h1>Animações</h1>
         </div>
-        <div class="grid">
+        <div class="grid" style="grid-template-columns: auto auto;">
 
         </div>
       </div>
@@ -70,7 +70,7 @@
           <img src="img/Arte.png" alt="Arte">
           <h1>Arte</h1>
         </div>
-        <div class="grid">
+        <div class="grid" style="grid-template-columns: auto;">
 
         </div>
       </div>
@@ -82,18 +82,29 @@
           <img src="img/Utilidades.png" alt="Utilidades">
           <h1>Utilidades</h1>
         </div>
-        <div class="grid">
+        <div class="grid" style="grid-template-columns: auto auto;">
 
         </div>
       </div>
     </section>
 
-    <section class='projects-section' id='unfinished'>
+    <section class='projects-section' id='recomend'>
       <div class="container">
         <div class="projects-header">
-          <h1>Não Terminados</h1>
+          <h1>Recomendações</h1>
         </div>
-        <div class="grid">
+        <div class="grid" style="grid-template-columns: auto;">
+
+        </div>
+      </div>
+    </section>
+
+    <section class='projects-section' id='cancel'>
+      <div class="container">
+        <div class="projects-header">
+          <h1>Cancelados</h1>
+        </div>
+        <div class="grid" style="grid-template-columns: auto;">
 
         </div>
       </div>
@@ -256,6 +267,12 @@
             img: 'img/Projetos/CoisasDoScratch.png',
             desc: 'O show só para Scratchers.'
           },
+          {
+            name: 'Mundo dos Palitos',
+            url: 'mundo-dos-palitos',
+            img: 'img/Projetos/Fupalito.png',
+            desc: 'Série de animação onde viramos stickmen!'
+          }
         ],
         'music': [
           {
@@ -317,25 +334,27 @@
             desc: 'Editor de texto automático. Você pode criar regras para trocar fragmentos de texto por outros.'
           },
           {
-            name: 'Scratch Upload',
-            url: 'https://fupicat.github.io/ScratchUpload',
-            img: 'img/Projetos/ScratchUpload.png',
-            desc: 'Um host de imagens para o fórum do Scratch e outros que usam BBcode, sem propagandas nem login.'
+            name: 'GodotRecorder',
+            url: 'https://github.com/Fupicat/GodotRecorder',
+            img: 'img/Projetos/GodotRecorder.png',
+            desc: 'Um projeto da Godot Engine que você pode usar para renderizar animações feitas dentro da Engine.'
           },
         ],
-        'unfinished': [
+        'recomend': [
+          {
+            name: 'Scratch Image Uploader Extension',
+            url: 'https://github.com/JeffaloBob/scratch-image-uploader',
+            img: 'img/Projetos/ScratchUpload.png',
+            desc: '(Inglês) Extensão para Chrome (e userscript para Firefox) que te deixa copiar e colar imagens direto no fórum do Scratch para hostear.'
+          },
+        ],
+        'cancel': [
           {
             name: 'SZ',
             url: 'sz',
             img: 'img/Projetos/SZ.png',
-            desc: 'Um simulador de vida ainda em desenvolvimento.'
+            desc: 'Um simulador de vida cancelado.'
           },
-          {
-            name: 'Mundo dos Palitos',
-            url: 'mundo-dos-palitos',
-            img: 'img/Projetos/Fupalito.png',
-            desc: 'Série de animação onde viramos stickmen!'
-          }
         ]
       }
 
