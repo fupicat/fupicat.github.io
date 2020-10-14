@@ -9,7 +9,7 @@ body {
   text-align: center;
 }
 
-.container, .proj-header {
+.container {
   width: 80%;
   margin: auto;
   overflow: hidden;
@@ -153,7 +153,8 @@ header nav a {
 }
 
 .grid-item .info {
-  margin: 10px;
+  margin: 10px 10px 0px 10px;
+  max-width: 60%;
 }
 
 .grid-item .info a {
@@ -191,6 +192,34 @@ footer a:hover {
 
 .projects-section .grid {
   grid-template-columns: auto auto auto;
+}
+
+.projects-section .grid img {
+  height: 4em;
+}
+
+/* Sticker */
+
+.sticker {
+  -webkit-filter: drop-shadow(0px 1px 0.2px white)
+                  drop-shadow(1px 0px 0.2px white)
+                  drop-shadow(0px -1px 0.2px white)
+                  drop-shadow(-1px 0px 0.2px white)
+                  drop-shadow(0px 1px 0.2px white)
+                  drop-shadow(1px 0px 0.2px white)
+                  drop-shadow(0px -1px 0.2px white)
+                  drop-shadow(-1px 0px 0.2px white)
+                  drop-shadow(0px 0px 4px black);
+
+  filter: drop-shadow(0px 1px 0.2px white)
+          drop-shadow(1px 0px 0.2px white)
+          drop-shadow(0px -1px 0.2px white)
+          drop-shadow(-1px 0px 0.2px white)
+          drop-shadow(0px 1px 0.2px white)
+          drop-shadow(1px 0px 0.2px white)
+          drop-shadow(0px -1px 0.2px white)
+          drop-shadow(-1px 0px 0.2px white)
+          drop-shadow(0px 0px 4px black);
 }
 
 /* Projects Header */

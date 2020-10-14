@@ -87,18 +87,3 @@
 #music .grid-item:hover {
     background-color: #6ec83c;
 }
-
-/* Recomend */
-  
-#recomend {
-    background-color: #9d64f0;
-}
-  
-#recomend .grid-item {
-    background-color: #7b30d5;
-    color: #000;
-}
-  
-#recomend .grid-item:hover {
-    background-color: #8b40e6;
-}
