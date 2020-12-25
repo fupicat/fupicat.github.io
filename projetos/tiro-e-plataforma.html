@@ -25,7 +25,17 @@
   <body>
     <!-- Olá, eu sou o código-fonte. Por favor não repare na bagunça. '3' !-->
     
-    <header></header>
+    <header>
+      <div class='container'>
+        <a href="/index.html"><img src="/img/LogoSmall.png" alt="Fupi" onmouseover="this.src='/img/Logo.png'" onmouseout="this.src='/img/LogoSmall.png'"></a>
+        <nav>
+          <a href="/projetos.html">Projetos</a>
+          <a href="/sobre.html">Sobre</a>
+          <a href="/ideias.html">Ideias</a>
+          <a href="https://twitter.com/fupibr">Twitter</a>
+        </nav>
+      </div>
+    </header>
 
     <section class="proj-header">
       <div class="container">
@@ -77,10 +87,23 @@
       </div>
     </section>
 
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <p>
+          <a href="https://scratch.mit.edu/users/Fupicat/">Scratch</a> &#183;
+          <a href="https://fupicat.newgrounds.com/">Newgrounds</a> &#183;
+          <a href="https://gamejolt.com/@Fupi">Gamejolt</a> &#183;
+          <a href="https://fupi.itch.io">Itch</a> &#183;
+          <a href="https://github.com/Fupicat">GitHub</a> &#183;
+          <a href="https://twitter.com/fupibr">Twitter</a> &#183;
+          <a href="https://youtube.com/c/fupii">YouTube</a> &#183;
+          <a href="https://opengameart.org/users/fupi">OpenGameArt</a>
+        </p>
+        <p><a id='themebtn' href='#themebtn' onclick='changetheme()'>Tema: Padrão</a></p>
+      </div>
+    </footer>
 
-    <script src="/js/jquery-3.5.1.min.js"></script>
-    <script src="/autoload.js"></script>
+  <script src="/js/temas.js"></script>
 
   </body>
 </html>

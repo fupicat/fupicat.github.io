@@ -26,7 +26,17 @@
   <body>
     <!-- Olá, eu sou o código-fonte. Por favor não repare na bagunça. '3' !-->
     
-    <header></header>
+    <header>
+      <div class='container'>
+        <a href="/index.html"><img src="/img/LogoSmall.png" alt="Fupi" onmouseover="this.src='/img/Logo.png'" onmouseout="this.src='/img/LogoSmall.png'"></a>
+        <nav>
+          <a href="/projetos.html">Projetos</a>
+          <a href="/sobre.html">Sobre</a>
+          <a href="/ideias.html">Ideias</a>
+          <a href="https://twitter.com/fupibr">Twitter</a>
+        </nav>
+      </div>
+    </header>
 
     <section class='projects-section' id='jogos'>
       <div class="container">
@@ -99,10 +109,23 @@
       </div>
     </section>
 
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <p>
+          <a href="https://scratch.mit.edu/users/Fupicat/">Scratch</a> &#183;
+          <a href="https://fupicat.newgrounds.com/">Newgrounds</a> &#183;
+          <a href="https://gamejolt.com/@Fupi">Gamejolt</a> &#183;
+          <a href="https://fupi.itch.io">Itch</a> &#183;
+          <a href="https://github.com/Fupicat">GitHub</a> &#183;
+          <a href="https://twitter.com/fupibr">Twitter</a> &#183;
+          <a href="https://youtube.com/c/fupii">YouTube</a> &#183;
+          <a href="https://opengameart.org/users/fupi">OpenGameArt</a>
+        </p>
+        <p><a id='themebtn' href='#themebtn' onclick='changetheme()'>Tema: Padrão</a></p>
+      </div>
+    </footer>
 
-    <script src="/js/jquery-3.5.1.min.js"></script>
-    <script src="/autoload.js"></script>
+  <script src="/js/temas.js"></script>
     <script>
 
       let projects = {
@@ -400,32 +423,18 @@
         
       }
 
-      let origHeight = []; //Lista de tamanhos originais das seções em px.
+      let sects = document.querySelectorAll(".projects-section");
 
-      $('.projects-section').each(function() { //Para cada seção de projetos...
-        origHeight.push($(this).find('.grid').height()); //Adicione o tamanho da grade à lista.
-
-        $(this).find('.projects-header').click(function() { //Adicione esta função ao clicar na seção.
-          let toggle = $(this).parent().find('.grid');
-
-          if (toggle.css('display') == 'none') { //Se a grade estiver escondida...
-            toggle.show(); //Mostre a grade.
-
-            let hundred = origHeight[$('.projects-section').index($(this).parent().parent())]; //Pegue o tamanho da lista.
-            toggle.stop().animate({height:hundred}, 200, function() {
-              toggle.css('height', '100%');
-            }); //Anime o tamanho da grade até o valor da lista e então resete o tamanho para 100%.
-          
-          } else { //Senão...
-          
-            toggle.stop().animate({height:0}, 200, function() {
-              toggle.hide();
-            }); //Anime o tamanho para 0px e esconda a grade.
+      sects.forEach(element => {
+        element.querySelector(".container").addEventListener("click", function() {
+          if (this.querySelector(".grid").style.display == "none") {
+            this.querySelector(".grid").style.display = "grid";
+          } else {
+            this.querySelector(".grid").style.display = "none";
           }
-
         })
+      });
 
-      })
     </script>
 
   </body>
