@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/old/css/master.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="description" content="Meus jogos e outras coisas." />
+    <meta
+      name="keywords"
+      content="fupi, fupicat, fupi437, scratch, godot, engine, html5, online, jogos, games, sz, scratcherz, música, royalty-free, public domain"
+    />
+    <meta name="author" content="Fupi" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/old/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/old/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/old/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/old/site.webmanifest" />
+    <link rel="mask-icon" href="/old/safari-pinned-tab.svg" color="#6e438d" />
+    <meta name="apple-mobile-web-app-title" content="Fupi" />
+    <meta name="application-name" content="Fupi" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="theme-color" content="#6e438d" />
+
+    <title>Fupi &#183; Criador de Episódio - Mundo de Palitos</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <!-- Olá, eu sou o código-fonte. Por favor não repare na bagunça. '3' !-->
+
+    <header>
+      <div class="container">
+        <a href="/old/index.html"
+          ><img
+            src="/old/img/LogoSmall.png"
+            alt="Fupi"
+            onmouseover="this.src='/old/img/Logo.png'"
+            onmouseout="this.src='/old/img/LogoSmall.png'"
+        /></a>
+        <nav>
+          <a href="/old/projetos.html">Projetos</a>
+          <a href="/old/sobre.html">Sobre</a>
+          <a href="/old/ideias.html">Ideias</a>
+          <a href="https://twitter.com/fupibr">Twitter</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="proj-header">
+      <div class="container">
+        <h1>Criador de Episódio - Mundo de Palitos</h1>
+      </div>
+    </section>
+
+    <section class="browser-game">
+      <div class="container">
+        <iframe
+          src="https://scratch.mit.edu/projects/459766613/embed"
+          allowtransparency="true"
+          width="100%"
+          height="620"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen
+        ></iframe>
+
+        <style>
+          body {
+            background-color: #c5c5c5;
+          }
+          .proj-header h1 {
+            color: #000000;
+          }
+          .grid-item {
+            background-color: #9869b3;
+            color: #000000;
+          }
+          .grid-item a {
+            color: #4f246d;
+          }
+        </style>
+
+        <p class="warning" style="cursor: pointer" onclick="abrirProjeto();">
+          Atenção: Você não poderá publicar seus episódios aqui. Se quiser fazer
+          isso, clique aqui para jogar no Scratch. Você vai precisar de um conta
+          no Scratch.
+        </p>
+        <script>
+          function abrirProjeto() {
+            let win = window.open(
+              "https://scratch.mit.edu/projects/459766613/",
+              "_blank"
+            );
+            win.focus();
+          }
+        </script>
+        <div class="grid">
+          <div class="grid-item">
+            <div class="info">
+              <h1>Instruções</h1>
+              <p>Controles: Mouse e teclado</p>
+              <p>Clique no botão + para adicionar uma nova cena.</p>
+              <p>
+                Clique em um dos botões coloridos para escolher o tipo de cena.
+                Cenas ditam o que acontece na animação, por exemplo, se os
+                personagens se movem, falam, etc. Experimente todas!
+              </p>
+              <p>Clique em um bloco para editar aquela cena na animação.</p>
+              <p>
+                Passe o mouse nos botões de cima para saber o que eles fazem.
+              </p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="info">
+              <h1>Sobre</h1>
+              <p>
+                Feito em uma semana para o aniversário de 1 ano do Mundo de
+                Palitos!! Você pode criar o seu próprio episódio com várias
+                coisas diferentes, e se você jogar no Scratch você pode até
+                publicar o seu projeto como remix para todos verem!
+              </p>
+              <p>Mas ninguém fez episódio ainda.</p>
+              <p>Tudo preguiçoso.</p>
+              <p>Lançado em 12 de dezembro de 2020</p>
+              <h1>Links</h1>
+              <p>
+                <a href="https://scratch.mit.edu/projects/459766613/"
+                  >Página no Scratch</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          <a href="https://scratch.mit.edu/users/Fupicat/">Scratch</a> &#183;
+          <a href="https://fupicat.newgrounds.com/">Newgrounds</a> &#183;
+          <a href="https://gamejolt.com/@Fupi">Gamejolt</a> &#183;
+          <a href="https://fupi.itch.io">Itch</a> &#183;
+          <a href="https://github.com/Fupicat">GitHub</a> &#183;
+          <a href="https://twitter.com/fupibr">Twitter</a> &#183;
+          <a href="https://youtube.com/c/fupii">YouTube</a> &#183;
+          <a href="https://opengameart.org/users/fupi">OpenGameArt</a>
+        </p>
+        <p>
+          <a id="themebtn" href="#themebtn" onclick="changetheme()"
+            >Tema: Padrão</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="/old/js/temas.js"></script>
+  </body>
+</html>
