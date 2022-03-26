@@ -7,7 +7,7 @@
     <title>Redirecionando...</title>
     <meta name="robots" content="noindex" />
     <script>
-      if (Boolean(localStorage.getItem("redirect"))) {
+      if (localStorage.getItem("redirect") === "true") {
         localStorage.setItem("redirect", false);
         location = "https://fupicat.github.io/old/404.html";
       } else {
