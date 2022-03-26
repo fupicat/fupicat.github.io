@@ -7,12 +7,13 @@
     <title>Redirecionando...</title>
     <meta name="robots" content="noindex" />
     <script>
-      if (localStorage.getItem("redirect")) {
+      if (Boolean(localStorage.getItem("redirect"))) {
         localStorage.setItem("redirect", false);
         location = "https://fupicat.github.io/old/404.html";
+      } else {
+        localStorage.setItem("redirect", true);
+        location = "https://fupicat.github.io/old" + location.pathname;
       }
-      localStorage.setItem("redirect", true);
-      location = "https://fupicat.github.io/old" + location.pathname;
     </script>
   </head>
   <body></body>
