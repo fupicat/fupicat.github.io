@@ -1,3 +1,5 @@
+localStorage.setItem("redirect", false);
+
 var tema = localStorage.getItem("tema");
 var butt = document.getElementById("themebtn");
 
